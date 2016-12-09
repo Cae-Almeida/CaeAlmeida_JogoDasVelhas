@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Jogo da Velha">
+		<meta name="keyword" content="aula, html5, css, javascript">
+		<meta name="author" content="Caê Almeida | cae.addams@gmail.com">
+		
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<script type="text/javascript" src="js/gameLoop.js"></script>
+		
+		<title>The Game of Velha</title>
+	</head>
+	<body>	
+		<div>
+		<img src = image/veias.jpg class="veias">
+		<img src = image/veias2.jpg class="veias2">
+		</div>
+	
+		<div class="placar">
+			
+			<div class="j1" id = "placarX">0</div>
+			<div class="jx">X</div>
+			<div class="j2" id = "placarO">0</div>
+		</div>
+		<div class="boxJogo">
+			<form name="gameLoop" class="qqrcoisa" method="post">
+				<input type="button" name="sqr1" class="jogo" onclick="rodada(this);">
+				<input type="button" name="sqr2" class="jogo" onclick="rodada(this);">
+				<input type="button" name="sqr3" class="jogo" onclick="rodada(this);">
+				<br>
+				<input type="button" name="sqr4" class="jogo" onclick="rodada(this);">
+				<input type="button" name="sqr5" class="jogo" onclick="rodada(this);">
+				<input type="button" name="sqr6" class="jogo" onclick="rodada(this);">
+				<br>
+				<input type="button" name="sqr7" class="jogo" onclick="rodada(this);">
+				<input type="button" name="sqr8" class="jogo" onclick="rodada(this);">
+				<input type="button" name="sqr9" class="jogo" onclick="rodada(this);">
+			</form>
+		</div>
+		
+		<script type="text/javascript">
+			reset();
+		</script>
+	</body>
+</html>
